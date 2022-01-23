@@ -63,6 +63,11 @@ namespace MontyHall.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Account.Api v1"));
             }
 
+            app.UseCors(builder => builder
+                .WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod());
+
             app.UseRouting();
 
             app.UseAuthorization();
