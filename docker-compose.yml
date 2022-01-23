@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  montyhall.api:
+    image: ${DOCKER_REGISTRY-}montyhall
+    build:
+      context: .
+      dockerfile: MontyHall.Api/Dockerfile
