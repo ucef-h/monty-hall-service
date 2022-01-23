@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}montyhall
     build:
       context: .
-      dockerfile: MontyHall.Api/Dockerfile
+      dockerfile: MontyHall.API/Dockerfile
